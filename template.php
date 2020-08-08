@@ -20,9 +20,40 @@
                     <input type="text" name= "nome" >
                 </label>
 
+                
                 <label>
-                    <input type="submit" value="Cadastrar">
+                    Descrição (Opicional):
+                    <textarea name="descricao"></textarea>
                 </label>
+                <label >
+                    Prazo (Opicional):
+                    <input type="text" name="prazo">
+                </label>
+                <fieldset>
+                    <legend>Prioridade</legend>
+                    <label>
+                    <input type="radio" name="prioridade" value="baixa"  checked />
+                    Baixa
+                    
+
+                    <input type="radio" name="prioridade" value="media"/>
+                    Média
+                    
+                    <input type="radio" name="prioridade" value="alta" />
+                    Alto
+                    </label>
+                </fieldset>
+
+                <label>
+                    Tarefa conclúida:
+                    <input type="checkbox" name="concluida" value="sim"/>
+                
+                </label>
+               
+                    <input type="submit" value="Cadastrar">
+                
+
+
         </fieldset>
     </form>  <!-- formulario -->
 
@@ -41,7 +72,7 @@
 
             <?php endforeach; ?>
             
-    </table> <!-- 59 -->
+    </table> <!-- 75-->
 
 </body>
 </html>
